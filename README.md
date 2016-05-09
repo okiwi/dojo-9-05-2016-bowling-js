@@ -11,4 +11,4 @@ npm install
 
 ## Execution ##
 
-./node_modules/.bin/mocha  --watch bowling-spec.js
+npm test

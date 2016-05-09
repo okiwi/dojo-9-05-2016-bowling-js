@@ -4,7 +4,7 @@
   "description": "kata du bowling en js avec karma",
   "main": "index.js",
   "scripts": {
-    "test": "test "
+    "test": "./node_modules/.bin/mocha ./app/bowling-spec.js"
   },
   "author": "okiwi.org",
   "license": "WTFPL",
