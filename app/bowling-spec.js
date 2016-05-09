@@ -27,5 +27,30 @@ describe('bowling', function() {
 		jeu.renverse(5);
 		expect(jeu.score).to.equal(9);
 	});
+	
+	it('on peux faire un spare', function() {
+		var jeu = new bowling.Jeu();
+		jeu.renverse(4);
+		jeu.renverse(6);
+		expect(jeu.score).to.equal('/');
+	});
+	
+	it('on peux faire un spare plus 5', function() {
+		var jeu = new bowling.Jeu();
+		jeu.renverse(4);
+		jeu.renverse(6);
+		jeu.renverse(5);
+		jeu.renverse(0);
+		expect(jeu.score).to.equal(20);
+	});
+	
+	/*it('on peux faire un spare plus 6', function() {
+		var jeu = new bowling.Jeu();
+		jeu.renverse(4);
+		jeu.renverse(6);
+		jeu.renverse(0);
+		jeu.renverse(6);
+		expect(jeu.score).to.equal(16);
+	});*/
 
 });
