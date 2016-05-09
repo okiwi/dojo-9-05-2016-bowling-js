@@ -1,0 +1,18 @@
+{
+  "name": "kata-bowling-js",
+  "version": "1.0.0",
+  "description": "kata du bowling en js avec karma",
+  "main": "index.js",
+  "scripts": {
+    "test": "test "
+  },
+  "author": "okiwi.org",
+  "license": "WTFPL",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "lodash": "^4.5.1"
+  }
+}
