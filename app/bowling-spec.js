@@ -9,10 +9,16 @@ describe('bowling', function() {
 	  
 	});
 	
-	it('on peut enregistrer une lancer', function() {
+	it('on peut enregistrer un lancer à 5', function() {
 		var jeu = new bowling.Jeu();
 		jeu.renverse(5);
 		expect(jeu.score).to.equal(5);
 	});
   
+	it('on peut enregistrer un lancer à 6', function() {
+		var jeu = new bowling.Jeu();
+		jeu.renverse(6);
+		expect(jeu.score).to.equal(6);
+	});
+
 });

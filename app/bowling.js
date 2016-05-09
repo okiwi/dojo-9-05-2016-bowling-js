@@ -1,7 +1,9 @@
+'use strict';
 module.exports.Jeu = function() {
+
   return {
-	  score: 5,
-	  renverse: function() {
+	  renverse: function(nombreDeQuilles) {
+		  this.score = nombreDeQuilles;
 	}
 }
 };
