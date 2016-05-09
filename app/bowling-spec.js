@@ -21,4 +21,11 @@ describe('bowling', function() {
 		expect(jeu.score).to.equal(6);
 	});
 
+	it('on peut enregistrer un deuxieme lancer', function() {
+		var jeu = new bowling.Jeu();
+		jeu.renverse(4);
+		jeu.renverse(5);
+		expect(jeu.score).to.equal(9);
+	});
+
 });
